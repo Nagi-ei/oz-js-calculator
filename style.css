@@ -1,0 +1,145 @@
+/* 모든 요소의 기본 여백 제거 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HTML과 Body의 기본 설정 */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  margin: 2rem;
+  padding: 2rem;
+  width: 70%;
+  min-width: 500px;
+  max-width: 800px;
+  min-height: 500px;
+  border-radius: 2rem;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.window-btns {
+  margin: 0 0.25rem 0.5rem;
+  width: 20px;
+  height: 20px;
+  border-style: none;
+  border-radius: 50%;
+  transition: all 150ms ease-in;
+}
+
+.window-btns:hover {
+  opacity: 0.7;
+}
+
+.window-btns:active {
+  transform: scale(1.1);
+}
+
+.close {
+  background-color: #ff5f54;
+}
+
+.minimize {
+  background-color: #febd2f;
+}
+
+.full-screen {
+  background-color: #2ac844;
+}
+
+/* Display */
+.display {
+  padding: 10px 30px;
+  height: 30%;
+  border: 1px solid black;
+  border-bottom: none;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #323232;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.history {
+  color: #9b9b9b;
+  font-size: 2rem;
+  text-align: right;
+}
+
+.current {
+  margin-top: 20px;
+  color: white;
+  font-size: 5rem;
+  text-align: right;
+}
+
+.delete {
+  width: 75px;
+  height: 75px;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;
+  left: 25px;
+  /* display: none; */
+}
+
+/* Buttons */
+.buttons {
+  height: 70%;
+  border-radius: 0 0 2rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.btn {
+  width: 25%;
+  border: 1px solid lightgray;
+  background-color: #fff;
+  font-size: 1.5rem;
+}
+
+.zero {
+  width: 50%;
+}
+
+.top-center {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.delete:hover,
+.btn:hover {
+  background-color: #9b9b9b;
+}
+
+.delete:active,
+.btn:active {
+  background-color: #323232;
+  color: white;
+}
+
+.function {
+  background-color: #d4d4d2;
+}
+
+.operator,
+.calculate {
+  background-color: #f5923e;
+  color: white;
+}
