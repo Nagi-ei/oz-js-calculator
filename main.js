@@ -59,7 +59,7 @@ const update = (text) => {
 // 타입 구하기
 function getType(btn) {
   if (
-    typeof btn === '+' ||
+    btn === '+' ||
     btn === '-' ||
     btn === '*' ||
     btn === '/' ||
@@ -146,6 +146,8 @@ buttons.addEventListener('click', (e) => {
       if (firstOperand === '') {
         current.textContent = '-';
         firstOperand = '-';
+      } else if (firstOperand === '-') {
+        current.textContent = '';
       } else if (getType(recent) === 'operator') {
         current.textContent = '-';
         secondOperand = '-';
