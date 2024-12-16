@@ -3,7 +3,6 @@
 let operator = null;
 let firstOperand = '';
 let secondOperand = '';
-
 let recent = 'C';
 let repeatOp = null;
 let repeatSecond = '';

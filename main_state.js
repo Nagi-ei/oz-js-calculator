@@ -11,17 +11,13 @@ let state = {
   num2: '',
   recent: 'C',
   history: '',
-
-  // = 반복시에만 필요 (과제에 없음)
-  // repeatOp: null,
-  // repeatSecond: 0,
 };
 
 // 이벤트리스너
 buttons.addEventListener('click', (e) => {
   if (e.target.className !== 'buttons') {
     clickBtn(e);
-    console.log(`${state.num1} ${state.operator} ${state.num2}`); // 추적!
+    console.log(`${state.num1} ${state.operator} ${state.num2}`); // 추적
   }
 });
 
@@ -29,14 +25,14 @@ delBtn.addEventListener('click', (e) => {
   clickBtn(e);
 });
 
-// 클릭 (리턴값X .1)
+// 클릭 (리턴값X: 1)
 function clickBtn(event) {
   const { btnType, clickedContent, current } = getData(event.target);
   state = updateState(state, btnType, clickedContent, current);
   display(state);
 }
 
-// 돔 읽기 (돔 접근)
+// 돔 읽기 (돔 접근: 1)
 function getData(targetElement) {
   return {
     btnType: getBtnType(targetElement),
@@ -45,7 +41,7 @@ function getData(targetElement) {
   };
 }
 
-// 화면 표시 (돔 접근) (리턴값X .2)
+// 화면 표시 (돔 접근: 2) (리턴값X: 2)
 function display(state) {
   current.textContent = state.num2;
   history.textContent = state.history;
