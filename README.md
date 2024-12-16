@@ -1,6 +1,6 @@
 # Calculator Project
 
-🎉 **Calculator Project**는 HTML, CSS, JavaScript를 이용해 간단한 계산기 기능을 구현한 웹 애플리케이션이다.
+🎉 **Calculator Project**는 HTML, CSS, JavaScript를 이용해 간단한 계산기 기능을 구현한 웹 애플리케이션이다. <br/>
 기본적인 사칙연산과 이전 입력 기록 기능을 포함한다.
 <br/>
 
@@ -34,8 +34,8 @@
 
 1. **프로젝트 클론**:
    ```bash
-   git clone https://github.com/your-username/calculator-project.git
-   cd calculator-project
+   git clone https://github.com/Nagi-ei/oz-js-calculator.git
+   cd oz-js-calculator
 
 2. **파일 실행:**:
    - `index.html` 파일을 브라우저에서 열어 계산기를 실행
